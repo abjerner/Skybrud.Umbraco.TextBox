@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <BuildInParallel>false</BuildInParallel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>Skybrud.Umbraco.TextBox</RootNamespace>
+    <Version>1.0.0-beta001</Version>
+    <Company>Skybrud.dk a/s</Company>
+    <Product>Skybrud.Umbraco.TextBox</Product>
+    <Authors>Anders Bjerner</Authors>
+    <Copyright>Copyright © 2020</Copyright>
+    <Description>TextBox property editor for Umbraco 8.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTags>Skybrud, Umbraco</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</PackageProjectUrl>
+    <PackageIconUrl>http://www.skybrud.dk/img/5431sk/icon/favicon.ico</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <PackageReference Include="UmbracoCms.Core" Version="8.1.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="UmbracoCms.Web" Version="8.1.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\Skybrud.TextBox\**\*.css" />
+    <Content Include="App_Plugins\Skybrud.TextBox\**\*.html" />
+    <Content Include="App_Plugins\Skybrud.TextBox\**\*.js" />
+    <Content Include="App_Plugins\Skybrud.TextBox\Lang\*.xml" />
+    <Content Include="App_Plugins\Skybrud.TextBox\package.manifest" />
+  </ItemGroup>
+
+  <!--<PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>-->
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ConfigurationName)'=='Release' AND '$(BuildTools)'=='1'">
+    <Exec Command="&quot;$(ProjectDir)..\build\Skybrud.BuildTools.Tasks.exe&quot; &quot;postBuild&quot; &quot;$(ConfigurationName)&quot; &quot;$(ProjectPath)&quot; &quot;$(TargetPath)&quot;" />
+  </Target>
+
+</Project>

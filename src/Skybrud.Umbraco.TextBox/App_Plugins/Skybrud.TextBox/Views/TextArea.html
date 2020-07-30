@@ -1,0 +1,4 @@
+<div class="SkybrudTextBox SkybrudTextArea" ng-controller="Skybrud.TextBox.Controller">
+    <textarea id="{{model.alias}}" ng-model="model.value" ng-change="update()" class="umb-property-editor umb-textarea textstring" rows="{{model.config.rows || 10}}" placeholder="{{model.config.placeholder}}"></textarea>
+    <div ng-if="info" class="info" ng-bind-html="info"></div>
+</div>

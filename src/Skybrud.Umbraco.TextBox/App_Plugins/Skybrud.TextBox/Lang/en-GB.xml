@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <area alias="skyTextBox">
+    <key alias="info1"><![CDATA[You have <strong class="positive">%0% characters remaining.]]></key>
+    <key alias="info2"><![CDATA[You have <strong class="negative">%0% characters remaining.]]></key>
+    <key alias="info3"><![CDATA[You cannot write more than <strong class="negative">%0%</strong> characters!]]></key>
+  </area>
+</language>

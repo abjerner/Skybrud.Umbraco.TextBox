@@ -1,0 +1,18 @@
+﻿.SkybrudTextbox .info {
+  margin-top: 2px;
+  font-size: 11px;
+}
+.SkybrudTextbox .positive {
+  color: #008800;
+}
+.SkybrudTextbox .negative {
+  color: #880000;
+}
+.form-horizontal .SkybrudTextbox .control-label {
+  float: none;
+  width: initial;
+  display: block;
+}
+.SkybrudTextbox .control-description {
+  max-width: 800px;
+}

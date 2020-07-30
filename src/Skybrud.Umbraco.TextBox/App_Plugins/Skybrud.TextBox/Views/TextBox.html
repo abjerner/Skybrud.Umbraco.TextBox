@@ -1,0 +1,4 @@
+<div class="SkybrudTextBox" ng-controller="Skybrud.TextBox.Controller">
+    <input id="{{model.alias}}" ng-model="model.value" ng-change="update()" type="text" class="umb-property-editor umb-textstring textstring" placeholder="{{model.config.placeholder}}"/>
+    <div ng-if="info" class="info" ng-bind-html="info"></div>
+</div>

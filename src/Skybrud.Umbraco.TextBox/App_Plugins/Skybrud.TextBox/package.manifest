@@ -1,0 +1,8 @@
+﻿{
+  "javascript": [
+    "/App_Plugins/Skybrud.TextBox/Scripts/Controllers/TextBox.js"
+  ],
+  "css": [
+    "/App_Plugins/Skybrud.TextBox/Styles/Default.css"
+  ]
+}

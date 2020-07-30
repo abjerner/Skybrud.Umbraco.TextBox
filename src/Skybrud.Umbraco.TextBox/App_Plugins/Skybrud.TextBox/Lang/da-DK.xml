@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<language alias="da" intName="Danish" localName="dansk" lcid="6" culture="da-DK">
+  <area alias="skyTextBox">
+    <key alias="info1"><![CDATA[Du har <strong class="positive">%0%</strong> tegn tilbage.]]></key>
+    <key alias="info2"><![CDATA[Du har <strong class="negative">%0%</strong> tegn tilbage.]]></key>
+    <key alias="info3"><![CDATA[Du kan ikke angive mere end <strong class="negative">%0%</strong> tegn!]]></key>
+  </area>
+</language>
