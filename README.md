@@ -49,7 +49,7 @@ You can also download a ZIP file of the latest release directly from GitHub, unz
 ![image](https://user-images.githubusercontent.com/3634580/88987187-73bf3800-d2d5-11ea-8962-b6395da8dd87.png)
 
 *Properties with values above below the character limit, but not enforced*
-![image](https://user-images.githubusercontent.com/3634580/88987192-7883ec00-d2d5-11ea-9634-a3abd3fa631f.png)
+![image](https://user-images.githubusercontent.com/3634580/88988260-a9195500-d2d8-11ea-97ac-748dd8748832.png)
 
 *The configuration options (prevalues) of the textarea data type*
 ![image](https://user-images.githubusercontent.com/3634580/88987630-db29b780-d2d6-11ea-86ea-77885086f3b7.png)
