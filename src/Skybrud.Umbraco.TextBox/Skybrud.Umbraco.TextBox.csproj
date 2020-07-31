@@ -7,7 +7,7 @@
 
   <PropertyGroup>
     <RootNamespace>Skybrud.Umbraco.TextBox</RootNamespace>
-    <Version>1.0.0-beta001</Version>
+    <Version>1.0.0-beta002</Version>
     <Company>Skybrud.dk a/s</Company>
     <Product>Skybrud.Umbraco.TextBox</Product>
     <Authors>Anders Bjerner</Authors>
