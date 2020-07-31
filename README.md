@@ -48,7 +48,7 @@ You can also download a ZIP file of the latest release directly from GitHub, unz
 *Properties with values below the character limit*
 ![image](https://user-images.githubusercontent.com/3634580/88987187-73bf3800-d2d5-11ea-8962-b6395da8dd87.png)
 
-*Properties with values above below the character limit, but not enforced*
+*Properties with values above the character limit, but not enforced*
 ![image](https://user-images.githubusercontent.com/3634580/88988260-a9195500-d2d8-11ea-97ac-748dd8748832.png)
 
 *The configuration options (prevalues) of the textarea data type*
