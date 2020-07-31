@@ -6,7 +6,7 @@
   The default property editors in Umbraco only shows the limit when it has been reached, whereas the property editors in this package show the limit right away, kaing it more visual to the editor that there is a limit.
   
 - **Enforced character limit**  
-  Umbraco will only show the limit when it has reached or exceeded, but not actually enforce the character limit. Via the config option on the data type, the property editors in this package can be configured to prevent the user from exceeding the character limit.
+  Umbraco will only show the limit when it has been reached or exceeded, but not actually enforce the character limit. Via the config option on the data type, the property editors in this package can be configured to prevent the user from exceeding the character limit.
   
 - **Placeholder text**  
   Both the textbox and textarea property editors allows setting a placeholder text that will be visible to the user when editing the properties in the backoffice.
