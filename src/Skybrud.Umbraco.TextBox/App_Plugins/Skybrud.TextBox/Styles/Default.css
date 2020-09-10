@@ -1,18 +1,18 @@
-﻿.SkybrudTextbox .info {
+﻿.SkybrudTextBox .info {
   margin-top: 2px;
   font-size: 11px;
 }
-.SkybrudTextbox .positive {
+.SkybrudTextBox .positive {
   color: #008800;
 }
-.SkybrudTextbox .negative {
+.SkybrudTextBox .negative {
   color: #880000;
 }
-.form-horizontal .SkybrudTextbox .control-label {
+.form-horizontal .SkybrudTextBox .control-label {
   float: none;
   width: initial;
   display: block;
 }
-.SkybrudTextbox .control-description {
+.SkybrudTextBox .control-description {
   max-width: 800px;
 }

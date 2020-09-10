@@ -1,6 +1,6 @@
 ﻿[
   {
-    "outputFile": "Plugins/Skybrud.TextBox/Styles/Default.css",
-    "inputFile": "Plugins/Skybrud.TextBox/Styles/Default.less"
+    "outputFile": "App_Plugins/Skybrud.TextBox/Styles/Default.css",
+    "inputFile": "App_Plugins/Skybrud.TextBox/Styles/Default.less"
   }
 ]
