@@ -1,4 +1,4 @@
-﻿using Umbraco.Core.PropertyEditors;
+﻿using Umbraco.Cms.Core.PropertyEditors;
 
 namespace Skybrud.Umbraco.TextBox.PropertyEditors {
 
