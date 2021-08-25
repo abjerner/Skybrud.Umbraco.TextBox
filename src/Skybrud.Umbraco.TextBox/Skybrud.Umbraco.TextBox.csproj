@@ -18,7 +18,7 @@
     <PackageTags>Skybrud, Umbraco</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</PackageProjectUrl>
-    <PackageIconUrl>http://www.skybrud.dk/img/5431sk/icon/favicon.ico</PackageIconUrl>
+    <PackageIcon>Skybrud.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</RepositoryUrl>
   </PropertyGroup>
@@ -29,12 +29,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="../build/Skybrud.Umbraco.TextBox.targets" PackagePath="build/Skybrud.Umbraco.TextBox.targets"></Content>
     <Content Include="App_Plugins\Skybrud.TextBox\**\*.css" />
     <Content Include="App_Plugins\Skybrud.TextBox\**\*.html" />
     <Content Include="App_Plugins\Skybrud.TextBox\**\*.js" />
     <Content Include="App_Plugins\Skybrud.TextBox\Lang\*.xml" />
     <None Remove="App_Plugins\Skybrud.TextBox\Styles\Default.min.css" />
     <Content Include="App_Plugins\Skybrud.TextBox\package.manifest" />
+    <None Include="Images\Skybrud.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
   <!--<PropertyGroup>

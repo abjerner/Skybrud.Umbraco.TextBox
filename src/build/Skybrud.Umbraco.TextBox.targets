@@ -1,0 +1,28 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!--Based on: https://github.com/bergmania/Bergmania.OpenStreetMap/blob/main/Bergmania.OpenStreetMap/build/Bergmania.OpenStreetMap.targets -->
+
+  <PropertyGroup>
+    <SkybrudTextBoxContentFilesPath>$(MSBuildThisFileDirectory)..\content\App_Plugins\Skybrud.TextBox\**\*.*</SkybrudTextBoxContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopySkybrudTextBoxAssets" BeforeTargets="Build">
+    <ItemGroup>
+      <SkybrudTextBoxContentFiles Include="$(SkybrudTextBoxContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying Skybrud.Umbraco.TextBox files: $(SkybrudTextBoxContentFilesPath) - #@(SkybrudTextBoxContentFiles->Count()) files"  Importance="high" />
+    <Copy
+      SourceFiles="@(SkybrudTextBoxContentFiles)"
+      DestinationFiles="@(SkybrudTextBoxContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\Skybrud.TextBox\%(RecursiveDir)%(Filename)%(Extension)')"
+      SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearSkybrudTextBoxAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <SkybrudTextBoxDir Include="$(MSBuildProjectDirectory)\App_Plugins\Skybrud.TextBox\" />
+    </ItemGroup>
+    <Message Text="Clear old Skybrud.Umbraco.TextBox files"  Importance="high" />
+    <RemoveDir Directories="@(SkybrudTextBoxDir)"  />
+  </Target>
+
+</Project>
