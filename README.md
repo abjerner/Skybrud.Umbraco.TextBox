@@ -20,8 +20,9 @@
 This is the recommended approach, as you install the [**NuGet Package**][NuGetPackage] in your Visual Studio project, and NuGet takes care of the rest.
 
 ```
-Install-Package Skybrud.Umbraco.TextBox -pre
+Install-Package Skybrud.Umbraco.TextBox -Version 1.0.0
 ```
+
 **Umbraco package**  
 Download the package from Our Umbraco - the Umbraco cummunity website:
 
