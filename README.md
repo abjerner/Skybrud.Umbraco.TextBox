@@ -1,6 +1,6 @@
 # Skybrud.Umbraco.TextBox
 
-**Skybrud.Umbraco.TextBox** is a package that adds new textbox and textarea properties for Umbraco 8. While having similar functionality to the build in property editors, this package adds a few extra features:
+**Skybrud.Umbraco.TextBox** is a package that adds new textbox and textarea properties for Umbraco 9. While having similar functionality to the build in property editors, this package adds a few extra features:
 
 - **More visible character limit**  
   The default property editors in Umbraco only shows the limit when it has been reached, whereas the property editors in this package show the limit right away, kaing it more visual to the editor that there is a limit.
@@ -16,26 +16,20 @@
 
 ## Installation
 
-**Install via NuGet**  
-This is the recommended approach, as you install the [**NuGet Package**][NuGetPackage] in your Visual Studio project, and NuGet takes care of the rest.
+The Umbraco 9 version of this package is only available via NuGet. To install the package, you can use either .NET CLI:
 
 ```
-Install-Package Skybrud.Umbraco.TextBox -pre
+dotnet add package Skybrud.Umbraco.TextBox --version 2.0.0-alpha001
 ```
-**Umbraco package**  
-Download the package from Our Umbraco - the Umbraco cummunity website:
 
-- <a href="https://our.umbraco.com/packages/backoffice-extensions/skybrud-textbox/" target="_blank"><strong>Download Umbraco package</strong></a>
 
-**Manual install**  
-You can also download a ZIP file of the latest release directly from GitHub, unzip, and move the contents to the root directory of your web application.
+or the older NuGet Package Manager:
 
-1. [**Download ZIP file**][GitHubRelease]  
-  Download the ZIP file directly from here on GitHub. The ZIP contains all necessary files to run the package.
+```
+Install-Package Skybrud.Umbraco.TextBox -Version 2.0.0-alpha001
+```
 
-2. **Unzip**  
-  Unzip and move the contents to the root directory of your web application.
-  
+For Umbraco 8, see the [**v1/main** branch](https://github.com/abjerner/Skybrud.Umbraco.TextBox/tree/v1/main#installation).
 
 [NuGetPackage]: https://www.nuget.org/packages/Skybrud.Umbraco.TextBox
 [GitHubRelease]: https://github.com/abjerner/Skybrud.Umbraco.TextBox/releases
