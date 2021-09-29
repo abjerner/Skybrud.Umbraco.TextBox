@@ -7,7 +7,7 @@
   <PropertyGroup>
     <RootNamespace>Skybrud.Umbraco.TextBox</RootNamespace>
     <Version>2.0.0-alpha001</Version>
-    <Company>Skybrud.dk a/s</Company>
+    <Company>Limbo</Company>
     <Product>Skybrud.Umbraco.TextBox</Product>
     <Authors>Anders Bjerner</Authors>
     <Copyright>Copyright © 2021</Copyright>
@@ -15,10 +15,10 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageTags>Skybrud, Umbraco</PackageTags>
+    <PackageTags>Skybrud, Limbo, Umbraco, Textbox, Textarea</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</PackageProjectUrl>
-    <PackageIcon>Skybrud.png</PackageIcon>
+    <PackageIcon>Limbo.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</RepositoryUrl>
   </PropertyGroup>
@@ -36,7 +36,7 @@
     <Content Include="App_Plugins\Skybrud.TextBox\Lang\*.xml" />
     <None Remove="App_Plugins\Skybrud.TextBox\Styles\Default.min.css" />
     <Content Include="App_Plugins\Skybrud.TextBox\package.manifest" />
-    <None Include="Images\Skybrud.png" Pack="true" PackagePath="\"/>
+    <None Include="../build/Limbo.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
   <!--<PropertyGroup>
