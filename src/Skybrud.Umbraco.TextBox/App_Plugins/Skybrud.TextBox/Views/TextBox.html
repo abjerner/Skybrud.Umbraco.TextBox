@@ -1,4 +1,4 @@
-<div class="SkybrudTextBox" ng-controller="Skybrud.TextBox.Controller">
-    <input id="{{model.alias}}" ng-model="model.value" ng-change="update()" type="text" class="umb-property-editor umb-textstring textstring" placeholder="{{model.config.placeholder}}"/>
-    <div ng-if="info" class="info" ng-bind-html="info"></div>
+<div class="SkybrudTextBox" ng-controller="Skybrud.TextBox.Controller as vm">
+    <input id="{{model.alias}}" ng-model="model.value" ng-change="vm.update()" type="text" class="umb-property-editor umb-textstring textstring" placeholder="{{vm.placeholder}}"/>
+    <div ng-if="vm.info" class="info" ng-bind-html="vm.info"></div>
 </div>
