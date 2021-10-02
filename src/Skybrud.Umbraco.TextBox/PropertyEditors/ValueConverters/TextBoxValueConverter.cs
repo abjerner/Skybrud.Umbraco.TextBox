@@ -1,10 +1,21 @@
 ﻿using System;
+using Umbraco.Cms.Core.Dictionary;
 using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Core.PropertyEditors;
+using Umbraco.Cms.Core.Services;
+using Umbraco.Extensions;
 
 namespace Skybrud.Umbraco.TextBox.PropertyEditors.ValueConverters {
     
     public class TextBoxValueConverter : PropertyValueConverterBase {
+        
+        private readonly ILocalizedTextService _localizedTextService;
+        private readonly ICultureDictionary _cultureDictionary;
+
+        public TextBoxValueConverter(ILocalizedTextService localizedTextService, ICultureDictionary cultureDictionary) {
+            _localizedTextService = localizedTextService;
+            _cultureDictionary = cultureDictionary;
+        }
 
         public override bool IsConverter(IPublishedPropertyType propertyType) {
             return propertyType.EditorAlias == TextBoxDataEditor.EditorAlias;
@@ -19,7 +30,7 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors.ValueConverters {
             string value = inter as string;
 
             if (propertyType.DataType.Configuration is TextBoxConfiguration config && string.IsNullOrWhiteSpace(value)) {
-                return config.Fallback ?? string.Empty;
+                return config.Fallback.IsNullOrWhiteSpace() ? string.Empty : _localizedTextService.UmbracoDictionaryTranslate(_cultureDictionary, config.Fallback);
             }
 
             return inter ?? string.Empty;
