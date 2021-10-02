@@ -7,7 +7,7 @@ using Umbraco.Extensions;
 
 namespace Skybrud.Umbraco.TextBox.PropertyEditors.ValueConverters {
     
-    public class TextAreaValueConverter : PropertyValueConverterBase {
+    internal class TextAreaValueConverter : PropertyValueConverterBase {
         
         private readonly ILocalizedTextService _localizedTextService;
         private readonly ICultureDictionary _cultureDictionary;

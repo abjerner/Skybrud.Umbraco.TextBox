@@ -4,7 +4,7 @@ using Umbraco.Extensions;
 
 namespace Skybrud.Umbraco.TextBox {
     
-    public class TextBoxComposer : IComposer {
+    internal class TextBoxComposer : IComposer {
         
         public void Compose(IUmbracoBuilder builder) {
             builder.Services.AddUnique<TextBoxHelper>();

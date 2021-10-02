@@ -8,6 +8,7 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
     /// </summary>
     public class TextAreaConfigurationEditor : ConfigurationEditor<TextAreaConfiguration> {
         
+        /// <inheritdoc />
         public TextAreaConfigurationEditor(IIOHelper ioHelper) : base(ioHelper) { }
 
     }
