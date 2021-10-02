@@ -9,7 +9,7 @@
   Umbraco will only show the limit when it has been reached or exceeded, but not actually enforce the character limit. Via the config option on the data type, the property editors in this package can be configured to prevent the user from exceeding the character limit.
   
 - **Placeholder text**  
-  Both the textbox and textarea property editors allows setting a placeholder text that will be visible to the user when editing the properties in the backoffice.
+  Both the textbox and textarea property editors allow setting a placeholder text that will be visible to the user when editing the properties in the backoffice.
 
 - **Fallback text**  
   An optional fallback text may be set on the data type to be used instead when the property is left blank. The underlying property value converter will make sure the fallback value is returned when this is the case.
@@ -20,7 +20,7 @@
 This is the recommended approach, as you install the [**NuGet Package**][NuGetPackage] in your Visual Studio project, and NuGet takes care of the rest.
 
 ```
-Install-Package Skybrud.Umbraco.TextBox -Version 1.0.0
+Install-Package Skybrud.Umbraco.TextBox -Version 1.0.1
 ```
 
 **Umbraco package**  
