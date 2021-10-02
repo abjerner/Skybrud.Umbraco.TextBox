@@ -15,16 +15,22 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
         internal const string EditorView = "/App_Plugins/Skybrud.TextBox/Views/TextBox.html";
         
         private readonly IIOHelper _ioHelper;
+        private readonly TextBoxHelper _helper;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TextBoxDataEditor"/> class.
         /// </summary>
-        public TextBoxDataEditor(IDataValueEditorFactory dataValueEditorFactory, IIOHelper ioHelper) : base(dataValueEditorFactory) {
+        public TextBoxDataEditor(IDataValueEditorFactory dataValueEditorFactory, IIOHelper ioHelper, TextBoxHelper helper) : base(dataValueEditorFactory) {
             _ioHelper = ioHelper;
+            _helper = helper;
         }
 
         /// <inheritdoc/>
-        protected override IDataValueEditor CreateValueEditor() => DataValueEditorFactory.Create<TextOnlyValueEditor>(Attribute);
+        protected override IDataValueEditor CreateValueEditor() {
+            TextOnlyValueEditor valueEditor = DataValueEditorFactory.Create<TextOnlyValueEditor>(Attribute);
+            if (valueEditor.View.IndexOf('?') < 0) valueEditor.View += $"?umb__rnd={_helper.GetCacheBuster()}";
+            return valueEditor;
+        }
 
         /// <inheritdoc/>
         protected override IConfigurationEditor CreateConfigurationEditor() => new TextBoxConfigurationEditor(_ioHelper);
