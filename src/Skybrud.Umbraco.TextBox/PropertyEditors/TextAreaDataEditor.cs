@@ -20,7 +20,15 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
         public TextAreaDataEditor(ILogger logger) : base(logger) { }
 
         /// <inheritdoc/>
-        protected override IDataValueEditor CreateValueEditor() => new TextOnlyValueEditor(Attribute);
+        protected override IDataValueEditor CreateValueEditor() {
+
+            var valueEditor = new TextOnlyValueEditor(Attribute);
+
+            if (valueEditor.View.IndexOf('?') < 0) valueEditor.View += $"?umb__rnd={TextBoxPackage.GetCacheBuster()}";
+
+            return valueEditor;
+
+        }
 
         /// <inheritdoc/>
         protected override IConfigurationEditor CreateConfigurationEditor() => new TextAreaConfigurationEditor();
