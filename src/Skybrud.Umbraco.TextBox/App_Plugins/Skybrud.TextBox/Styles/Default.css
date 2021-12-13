@@ -16,3 +16,7 @@
 .SkybrudTextBox .control-description {
   max-width: 800px;
 }
+.Skybrud.TextArea {
+  resize: vertical;
+  min-height: 70px;
+}
