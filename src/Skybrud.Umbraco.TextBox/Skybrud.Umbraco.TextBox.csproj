@@ -15,6 +15,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <Title>Skybrud Textbox</Title>
     <PackageTags>Skybrud, Limbo, Umbraco, Textbox, Textarea</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/abjerner/Skybrud.Umbraco.TextBox</PackageProjectUrl>
