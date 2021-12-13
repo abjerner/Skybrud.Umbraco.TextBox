@@ -7,10 +7,12 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
     /// <summary>
     /// Represents a textbox property editor.
     /// </summary>
-    [DataEditor(EditorAlias, EditorType.PropertyValue, "Skybrud Textbox", EditorView, Group = "Skybrud")]
+    [DataEditor(EditorAlias, EditorType.PropertyValue, "Skybrud Textbox", EditorView, Group = "Skybrud", Icon = EditorIcon)]
     public class TextBoxDataEditor : DataEditor {
 
         internal const string EditorAlias = "Skybrud.TextBox";
+
+        internal const string EditorIcon = "icon-autofill color-skybrud";
 
         internal const string EditorView = "/App_Plugins/Skybrud.TextBox/Views/TextBox.html";
         
