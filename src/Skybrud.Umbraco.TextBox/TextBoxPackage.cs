@@ -16,7 +16,7 @@ namespace Skybrud.Umbraco.TextBox {
         /// <summary>
         /// Gets the friendly name of the package.
         /// </summary>
-        public const string Name = "Skybrud.Umbraco.TextBox";
+        public const string Name = "Skybrud TextBox";
 
         /// <summary>
         /// Gets the version of the package.
