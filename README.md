@@ -1,6 +1,6 @@
-# Skybrud.Umbraco.TextBox
+# Skybrud Textbox
 
-**Skybrud.Umbraco.TextBox** is a package that adds new textbox and textarea properties for Umbraco 9. While having similar functionality to the build in property editors, this package adds a few extra features:
+**Skybrud Textbox** (or **Skybrud.Umbraco.TextBox**) is a package that adds new textbox and textarea properties for Umbraco 9. While having similar functionality to the build in property editors, this package adds a few extra features:
 
 - **More visible character limit**  
   The default property editors in Umbraco only shows the limit when it has been reached, whereas the property editors in this package show the limit right away, making it more visual to the editor that there is a limit.
@@ -19,14 +19,14 @@
 The Umbraco 9 version of this package is only available via [NuGet](https://www.nuget.org/packages/Skybrud.Umbraco.TextBox/2.0.1). To install the package, you can use either .NET CLI:
 
 ```
-dotnet add package Skybrud.Umbraco.TextBox --version 2.0.1
+dotnet add package Skybrud.Umbraco.TextBox --version 2.0.2
 ```
 
 
 or the older NuGet Package Manager:
 
 ```
-Install-Package Skybrud.Umbraco.TextBox -Version 2.0.1
+Install-Package Skybrud.Umbraco.TextBox -Version 2.0.2
 ```
 
 For Umbraco 8, see the [**v1/main** branch](https://github.com/abjerner/Skybrud.Umbraco.TextBox/tree/v1/main#installation).
