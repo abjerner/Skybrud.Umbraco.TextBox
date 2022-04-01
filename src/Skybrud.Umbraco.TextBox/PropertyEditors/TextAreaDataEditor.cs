@@ -7,7 +7,7 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
     /// <summary>
     /// Represents a textarea property editor.
     /// </summary>
-    [DataEditor(EditorAlias, EditorType.PropertyValue, "Skybrud Textarea", EditorView, Group = "Skybrud", Icon = EditorIcon)]
+    [DataEditor(EditorAlias, EditorType.PropertyValue, "Skybrud Textarea", EditorView, ValueType = ValueTypes.Text, Group = "Skybrud", Icon = EditorIcon)]
     public class TextAreaDataEditor : DataEditor {
 
         internal const string EditorAlias = "Skybrud.TextArea";
