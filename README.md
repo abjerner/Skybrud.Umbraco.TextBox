@@ -16,17 +16,17 @@
 
 ## Installation
 
-The Umbraco 9 version of this package is only available via [NuGet](https://www.nuget.org/packages/Skybrud.Umbraco.TextBox/2.0.1). To install the package, you can use either .NET CLI:
+The Umbraco 9 version of this package is only available via [NuGet](https://www.nuget.org/packages/Skybrud.Umbraco.TextBox/2.0.3). To install the package, you can use either .NET CLI:
 
 ```
-dotnet add package Skybrud.Umbraco.TextBox --version 2.0.2
+dotnet add package Skybrud.Umbraco.TextBox --version 2.0.3
 ```
 
 
 or the older NuGet Package Manager:
 
 ```
-Install-Package Skybrud.Umbraco.TextBox -Version 2.0.2
+Install-Package Skybrud.Umbraco.TextBox -Version 2.0.3
 ```
 
 For Umbraco 8, see the [**v1/main** branch](https://github.com/abjerner/Skybrud.Umbraco.TextBox/tree/v1/main#installation).
