@@ -1,4 +1,4 @@
-# Skybrud Textbox
+# Skybrud Textbox [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) [![NuGet](https://img.shields.io/nuget/vpre/Skybrud.Umbraco.TextBox.svg)](https://www.nuget.org/packages/Skybrud.Umbraco.TextBox/2.0.4) [![NuGet](https://img.shields.io/nuget/dt/Skybrud.Umbraco.TextBox.svg)](https://www.nuget.org/packages/Skybrud.Umbraco.TextBox) [![Our Umbraco](https://img.shields.io/badge/our-umbraco-%233544B1)](https://our.umbraco.com/packages/backoffice-extensions/skybrud-textbox/)
 
 **Skybrud Textbox** (or **Skybrud.Umbraco.TextBox**) is a package that adds new textbox and textarea properties for Umbraco 9. While having similar functionality to the build in property editors, this package adds a few extra features:
 
