@@ -1,4 +1,5 @@
 ﻿using System;
+using Skybrud.Essentials.Strings;
 using Umbraco.Cms.Core.Dictionary;
 using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Core.PropertyEditors;
@@ -26,14 +27,15 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors.ValueConverters {
         }
         
         public override object ConvertIntermediateToObject(IPublishedElement owner, IPublishedPropertyType propertyType, PropertyCacheLevel referenceCacheLevel, object inter, bool preview) {
-            
-            string value = inter as string;
 
-            if (propertyType.DataType.Configuration is TextBoxConfiguration config && string.IsNullOrWhiteSpace(value)) {
+            if (inter is not string value) return string.Empty;
+            if (propertyType.DataType.Configuration is not TextBoxConfiguration config) return string.Empty;
+
+            if (string.IsNullOrWhiteSpace(value)) {
                 return config.Fallback.IsNullOrWhiteSpace() ? string.Empty : _localizedTextService.UmbracoDictionaryTranslate(_cultureDictionary, config.Fallback);
             }
-
-            return inter ?? string.Empty;
+            
+            return config.StripHtml ? StringUtils.StripHtml(value) : value;
 
         }
 

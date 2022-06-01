@@ -25,6 +25,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Skybrud.Essentials" Version="1.1.41" />
     <PackageReference Include="Umbraco.Cms.Core" Version="9.0.0" />
     <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.0.0" />
   </ItemGroup>
@@ -37,7 +38,7 @@
     <Content Include="App_Plugins\Skybrud.TextBox\Lang\*.xml" />
     <None Remove="App_Plugins\Skybrud.TextBox\Styles\Default.min.css" />
     <Content Include="App_Plugins\Skybrud.TextBox\package.manifest" />
-    <None Include="../build/Limbo.png" Pack="true" PackagePath="\"/>
+    <None Include="../build/Limbo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <PropertyGroup>

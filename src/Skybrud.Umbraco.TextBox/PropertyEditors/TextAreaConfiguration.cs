@@ -37,6 +37,12 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
         [ConfigurationField("fallback", "Fallback", "textstring", Description = "A fallback text used instead if the property is left blank.")]
         public string Fallback { get; set; }
 
+        /// <summary>
+        /// Gets or sets whether HTML tags should be stripped from the output value.
+        /// </summary>
+        [ConfigurationField("stripHtml", "Strip HTML", "boolean", Description = "Select if HTML entered by the user should be stripped in the output value.")]
+        public bool StripHtml { get; set; }
+
     }
 
 }
