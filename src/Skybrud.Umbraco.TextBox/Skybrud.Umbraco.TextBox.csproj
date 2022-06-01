@@ -6,7 +6,8 @@
 
   <PropertyGroup>
     <RootNamespace>Skybrud.Umbraco.TextBox</RootNamespace>
-    <Version>2.0.3</Version>
+    <VersionPrefix>2.0.3</VersionPrefix>
+    <VersionSuffix Condition="'$(Configuration)'=='Debug'">$([System.DateTime]::UtcNow.ToString(`yyyyMMddHHmm`))</VersionSuffix>
     <Company>Limbo</Company>
     <Product>Skybrud.Umbraco.TextBox</Product>
     <Authors>Anders Bjerner</Authors>
