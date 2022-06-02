@@ -10,13 +10,13 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
         /// <summary>
         /// Gets or sets the maximum character count allowed in the textarea.
         /// </summary>
-        [ConfigurationField("maxChars", "Maximum allowed characters", "textstringlimited", Description = "If empty - no character limit.")]
+        [ConfigurationField("maxChars", "Maximum allowed characters", "/App_Plugins/Skybrud.TextBox/Views/TextAreaMaxLength.html", Description = "If empty - no character limit.")]
         public int? MaxChars { get; set; }
         
         /// <summary>
         /// Gets or sets the deault number of rows.
         /// </summary>
-        [ConfigurationField("rows", "Number of rows", "number", Description = "If empty - 10 rows would be set as the default value.")]
+        [ConfigurationField("rows", "Number of rows", "/App_Plugins/Skybrud.TextBox/Views/TextAreaRows.html", Description = "If empty - 10 rows would be set as the default value.")]
         public int? Rows { get; set; }
         
         /// <summary>
