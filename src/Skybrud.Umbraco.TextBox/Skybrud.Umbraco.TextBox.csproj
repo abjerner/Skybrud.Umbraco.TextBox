@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup>
     <RootNamespace>Skybrud.Umbraco.TextBox</RootNamespace>
-    <VersionPrefix>2.0.4</VersionPrefix>
+    <VersionPrefix>3.0.0-alpha000</VersionPrefix>
     <VersionSuffix Condition="'$(Configuration)'=='Debug'">$([System.DateTime]::UtcNow.ToString(`yyyyMMddHHmm`))</VersionSuffix>
     <Company>Limbo</Company>
     <Product>Skybrud.Umbraco.TextBox</Product>
     <Authors>Anders Bjerner</Authors>
     <Copyright>Copyright © 2022</Copyright>
-    <Description>TextBox property editor for Umbraco 9.</Description>
+    <Description>TextBox property editor for Umbraco 10.</Description>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -27,8 +27,8 @@
 
   <ItemGroup>
     <PackageReference Include="Skybrud.Essentials" Version="1.1.41" />
-    <PackageReference Include="Umbraco.Cms.Core" Version="9.0.0" />
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.0.0" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="10.0.0-rc4" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.0-rc4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +38,7 @@
     <Content Include="App_Plugins\Skybrud.TextBox\**\*.js" />
     <Content Include="App_Plugins\Skybrud.TextBox\Lang\*.xml" />
     <None Remove="App_Plugins\Skybrud.TextBox\Styles\Default.min.css" />
+    <None Remove="App_Plugins\Skybrud.TextBox\Views\TextAreaMaxLength.html" />
     <Content Include="App_Plugins\Skybrud.TextBox\package.manifest" />
     <None Include="../build/Limbo.png" Pack="true" PackagePath="\" />
   </ItemGroup>

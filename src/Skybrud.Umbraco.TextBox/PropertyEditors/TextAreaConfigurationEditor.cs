@@ -1,5 +1,6 @@
 ﻿using Umbraco.Cms.Core.IO;
 using Umbraco.Cms.Core.PropertyEditors;
+using Umbraco.Cms.Core.Services;
 
 namespace Skybrud.Umbraco.TextBox.PropertyEditors {
     
@@ -9,7 +10,7 @@ namespace Skybrud.Umbraco.TextBox.PropertyEditors {
     public class TextAreaConfigurationEditor : ConfigurationEditor<TextAreaConfiguration> {
         
         /// <inheritdoc />
-        public TextAreaConfigurationEditor(IIOHelper ioHelper) : base(ioHelper) { }
+        public TextAreaConfigurationEditor(IIOHelper ioHelper, IEditorConfigurationParser editorConfigurationParser) : base(ioHelper, editorConfigurationParser) { }
 
     }
 
